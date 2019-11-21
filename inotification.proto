@@ -1,0 +1,27 @@
+message  Subscribe_request_response  {
+
+	repeated	 uint32  FunctionID = 1 ;
+}
+
+message  Subscribe_response  {
+
+	repeated	 functionResults	 FunctionResults = 1 ;
+}
+
+//Method 121 RemoveSubscription
+//--------------------------------------
+message  RemoveSubscription_request_response  {
+
+	repeated	 uint32	 FunctionID = 1 ;
+}
+
+message  RemoveSubscription_response  {
+
+	repeated	 functionResults	 FunctionResults = 1 ;
+}
+
+message  functionResults  {
+
+	optional	 uint32	 FunctionID = 1 ;
+	optional	 bool	 Successful = 2 ;
+}
